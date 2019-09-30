@@ -1,0 +1,78 @@
+body,
+html,
+h1,
+h2,
+h3,
+h4,
+p,
+img,
+button,
+input {
+    padding: 0;
+    margin: 0;
+}
+body,
+html {
+    height: 100%;
+    width: 100%;
+}
+#app {
+    overflow: hidden;
+    position:absolute;
+    top:0;
+    left: 0;
+    right:0;
+    bottom:0;
+    font-family: "Avenir", Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+a {
+    display: block;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+}
+img {
+    border: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+}
+button {
+    border: none;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+}
+input {
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+}
+input::-webkit-input-placeholder {
+    line-height: normal;
+    font-size: 26px;
+}
+strong,
+em,
+i {
+    font-style: normal;
+    font-weight: normal;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    padding-bottom: env(safe-area-inset-bottom);
+}
+
+@supports (bottom: env(safe-area-inset-bottom)) {
+    .page-footer{
+        margin-bottom: env(safe-area-inset-bottom);
+    }
+}
